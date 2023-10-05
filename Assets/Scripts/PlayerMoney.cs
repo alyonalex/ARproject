@@ -19,10 +19,5 @@ public class PlayerMoney : MonoBehaviour
     {
         return _moneyAmout - price >= 0;
     }
-    
-    public int currentMoney()
-    {
-        return _moneyAmout;
-    }
 }
 
