@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e150306348ad00c4fa093b66086fa03c, type: 3}
+  m_Name: New Items Config
+  m_EditorClassIdentifier: 
+  Items:
+  - Title: Ball 1
+    Prefab: {fileID: 7441570687240341015, guid: 70aa094f3906f7c4cbbcfdf8cf437d3e, type: 3}
+    Price: 100
+  - Title: Ball 2
+    Prefab: {fileID: 8267773461003566463, guid: c2ecb9cf12689fe479dfed95d225ac92, type: 3}
+    Price: 300
+  - Title: Ball 3
+    Prefab: {fileID: 7409823800956920716, guid: 521aa230983fe6740899a17ad38fca06, type: 3}
+    Price: 1000
