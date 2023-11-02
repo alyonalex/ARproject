@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMoney : MonoBehaviour
 {
     [SerializeField] private int _moneyAmout;
-     public void ProcessBuy(int money)
+    public void ProcessBuy(int money)
      {
         if(_moneyAmout - money < 0)
         {
@@ -19,5 +19,6 @@ public class PlayerMoney : MonoBehaviour
     {
         return _moneyAmout - price >= 0;
     }
+  
 }
 

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: New Items Config
   m_EditorClassIdentifier: 
   Items:
-  - Title: Ball 1
-    Prefab: {fileID: 7441570687240341015, guid: 70aa094f3906f7c4cbbcfdf8cf437d3e, type: 3}
+  - Title: Buy tomato
+    Prefab: {fileID: 3466747614912778832, guid: 0ea5c85545ffe5642890a16feffd0414, type: 3}
     Price: 100
-  - Title: Ball 2
-    Prefab: {fileID: 8267773461003566463, guid: c2ecb9cf12689fe479dfed95d225ac92, type: 3}
+  - Title: Buy mashroom
+    Prefab: {fileID: 3461739592407272505, guid: 887cabbd6ee9b9140a0141858e094d08, type: 3}
     Price: 300
-  - Title: Ball 3
-    Prefab: {fileID: 7409823800956920716, guid: 521aa230983fe6740899a17ad38fca06, type: 3}
+  - Title: Buy avocado
+    Prefab: {fileID: 4976022912698079988, guid: 7b249ad26d2569d43b19609b75d114fd, type: 3}
     Price: 1000

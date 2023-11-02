@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ARMenu : MonoBehaviour
 {
@@ -18,15 +18,19 @@ public class ARMenu : MonoBehaviour
 
     [SerializeField] private PlayerMoney _playerMoney;
 
+    [SerializeField] private Text text;
+
+    [SerializeField] private int startCountButton;
 
     private void Start()
     {
         UpdateButtons();
+        startCountButton = _root.childCount;
     }
 
     private void UpdateButtons()
     {
-        for(int i = 0; i < _root.childCount; i++)
+        for(int i = 2; i < _root.childCount; i++)
         {
             Destroy(_root.GetChild(i).gameObject);
         }
