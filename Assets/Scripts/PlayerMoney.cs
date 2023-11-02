@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class PlayerMoney : MonoBehaviour
 {
-    [SerializeField] private int _moneyAmout;
+    [SerializeField] private int _moneyAmount;
+
+    public int MoneyAmount => _moneyAmount;
     public void ProcessBuy(int money)
      {
-        if(_moneyAmout - money < 0)
+        if(_moneyAmount - money < 0)
         {
             return;
         }
 
-        _moneyAmout -= money;
+        _moneyAmount -= money;
      }
 
     public bool CanBuy(int price)
     {
-        return _moneyAmout - price >= 0;
+        return _moneyAmount - price >= 0;
     }
   
 }

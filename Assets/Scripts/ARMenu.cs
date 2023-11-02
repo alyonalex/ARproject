@@ -20,17 +20,23 @@ public class ARMenu : MonoBehaviour
 
     [SerializeField] private Text text;
 
-    [SerializeField] private int startCountButton;
+    private int startCountButton;
+
+    public void UpdateTextMoney()
+    {
+        text.text = $"Money: {_playerMoney.MoneyAmount}";
+    }
 
     private void Start()
     {
-        UpdateButtons();
         startCountButton = _root.childCount;
+        UpdateTextMoney();
+        UpdateButtons();
     }
 
     private void UpdateButtons()
     {
-        for(int i = 2; i < _root.childCount; i++)
+        for(int i = startCountButton; i < _root.childCount; i++)
         {
             Destroy(_root.GetChild(i).gameObject);
         }
@@ -60,6 +66,7 @@ public class ARMenu : MonoBehaviour
         _playerMoney.ProcessBuy(price);
 
         UpdateButtons();
+        UpdateTextMoney();
     }
     private IEnumerator UpdateCollection()
     {

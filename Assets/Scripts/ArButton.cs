@@ -13,6 +13,8 @@ public class ArButton : MonoBehaviour
 
     [SerializeField] private Interactable _interactable;
 
+    private Vector3 _spawn;
+
     private GameObject _prefab;
 
     public void Initialize(Item config)
@@ -20,12 +22,13 @@ public class ArButton : MonoBehaviour
 
         _title.text = config.Title;
         _prefab = config.Prefab;
+        _spawn = config.SpawnPoint;
         _interactable.OnClick.AddListener(ProcessClick);
     }
 
     private void ProcessClick()
     {
+        Instantiate(_prefab, _spawn, Quaternion.identity);
         OnButtonClicked?.Invoke();
-        Instantiate(_prefab, new Vector3(-0.477f, -1.2f, 4.405f), new Quaternion(0, 0, 0, 0));
     }
 }
