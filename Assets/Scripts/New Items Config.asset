@@ -16,12 +16,12 @@ MonoBehaviour:
   - Title: Buy tomato
     Prefab: {fileID: 3466747614912778832, guid: 0ea5c85545ffe5642890a16feffd0414, type: 3}
     Price: 100
-    SpawnPoint: {x: -0.467, y: -1.319, z: 4.264}
+    SpawnPoint: {x: -0.221, y: -0.378, z: 3.9123}
   - Title: Buy mushroom
     Prefab: {fileID: 3461739592407272505, guid: 887cabbd6ee9b9140a0141858e094d08, type: 3}
     Price: 300
-    SpawnPoint: {x: -0.703, y: -1.346, z: 4.264}
+    SpawnPoint: {x: -0.515, y: -0.409, z: 3.9123}
   - Title: Buy avocado
     Prefab: {fileID: 4976022912698079988, guid: 7b249ad26d2569d43b19609b75d114fd, type: 3}
     Price: 1000
-    SpawnPoint: {x: -0.183, y: -1.319, z: 4.264}
+    SpawnPoint: {x: 0.079, y: -0.378, z: 3.9123}
