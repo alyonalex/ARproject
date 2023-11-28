@@ -5,11 +5,13 @@ using System;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PlayerMoney : MonoBehaviour
 {
     [SerializeField] private int _moneyAmount;
     [SerializeField] private Text money_Text;
+    [HideInInspector] public UnityEvent add_money;
 
     public int MoneyAmount => _moneyAmount;
     public void ProcessBuy(int money)
@@ -30,7 +32,7 @@ public class PlayerMoney : MonoBehaviour
     {
         _moneyAmount += amount;
         money_Text.text = $"Δενόγθ: {_moneyAmount}";
-
+        add_money?.Invoke();
     }
 
 }

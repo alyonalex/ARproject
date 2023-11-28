@@ -20,13 +20,12 @@ public class ARMenu : MonoBehaviour
 
     [SerializeField] private Text money_text;
 
-    [SerializeField] private int startCountButton;
-
     private void Start()
     {
+
         UpdateText();
         UpdateButtons();
-        startCountButton = _root.childCount;
+        _playerMoney.add_money.AddListener(UpdateButtons);
     }
 
     private void UpdateButtons()
