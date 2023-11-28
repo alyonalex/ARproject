@@ -25,7 +25,7 @@ public class ARMenu : MonoBehaviour
 
         UpdateText();
         UpdateButtons();
-        _playerMoney.add_money.AddListener(UpdateButtons);
+        _playerMoney.change_money.AddListener(UpdateButtons);
     }
 
     private void UpdateButtons()

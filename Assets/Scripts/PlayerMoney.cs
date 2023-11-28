@@ -11,7 +11,7 @@ public class PlayerMoney : MonoBehaviour
 {
     [SerializeField] private int _moneyAmount;
     [SerializeField] private Text money_Text;
-    [HideInInspector] public UnityEvent add_money;
+    [HideInInspector] public UnityEvent change_money;
 
     public int MoneyAmount => _moneyAmount;
     public void ProcessBuy(int money)
@@ -22,6 +22,7 @@ public class PlayerMoney : MonoBehaviour
         }
 
         _moneyAmount -= money;
+        change_money?.Invoke();
      }
 
     public bool CanBuy(int price)
@@ -32,7 +33,7 @@ public class PlayerMoney : MonoBehaviour
     {
         _moneyAmount += amount;
         money_Text.text = $"Δενόγθ: {_moneyAmount}";
-        add_money?.Invoke();
+        change_money?.Invoke();
     }
 
 }
